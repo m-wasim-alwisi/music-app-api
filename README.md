@@ -19,4 +19,3 @@ this api for WMB in SVU
 1. Clone the repository:
    ```Bash
    git clone [https://github.com/m-wasim-alwisi/music-app-api.git](https://github.com/m-wasim-alwisi/music-app-api.git)
-   ```
