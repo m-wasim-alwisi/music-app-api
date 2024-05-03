@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "203da971-f252-45b0-8ffb-872dd8d9aa7f",
+		"name": "Music Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29760606"
+	},
+	"item": [
+		{
+			"name": "get_all_songs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/get_all_songs.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"get_all_songs.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_artist",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/get_all_artists.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"get_all_artists.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one song",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/get_one_song.php?id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"get_one_song.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one artist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/get_one_artist.php?id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"get_one_artist.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add artist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fname",
+							"value": "ahmad",
+							"type": "text"
+						},
+						{
+							"key": "lname",
+							"value": "wasim",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "syria",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/add_artist.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"add_artist.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "hayat",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "classic",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "artist_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://amphibological-doze.000webhostapp.com/add_song.php",
+					"protocol": "https",
+					"host": [
+						"amphibological-doze",
+						"000webhostapp",
+						"com"
+					],
+					"path": [
+						"add_song.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "artist search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/artist_search.php?search=ahmad",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"artist_search.php"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "ahmad"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "song search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/song_search.php?search=da",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"song_search.php"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "da"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "wasimalwisi",
+							"type": "text"
+						},
+						{
+							"key": "userPassword",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/login.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fname",
+							"value": "wasim",
+							"type": "text"
+						},
+						{
+							"key": "lname",
+							"value": "ahmad",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "wasimalwisi@gamil.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "wasimalwisi",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "aleppo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/register.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"register.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buy song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "song_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "credit_card_Number",
+							"value": "12313",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/bysong.php",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"bysong.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://amphibological-doze.000webhostapp.com"
+		}
+	]
+}
