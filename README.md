@@ -10,11 +10,12 @@ this api for WMB in SVU
 
 ### Prerequisites
 
-- Flutter SDK (https://flutter.dev/get-started)
-- PHP (version 8.2)
-- (List any additional libraries or dependencies)
+- Flutter SDK (https://docs.flutter.dev/get-started/install)
+- PHP (version 8.2 or later)
+- Additional libraries:
+  - http: Network communication (https://pub.dev/packages/http)
 
-### Setting Up the Flutter App
+### Setting Up
 
 1. Clone the repository:
    ```Bash
